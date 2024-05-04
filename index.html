@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Biazinha</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="functions.js"></script>
+</head>
+
+<body id="fundo">
+    <div>
+        <div id="calculadora"></div>
+            <form onsubmit="calcular(event)">
+                <h1 id="titulo">Calculadora</h1>
+
+                    <p id="display"></p>
+                    <button type="button" onclick="apagar()">C</button>
+                    <br>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('1')">1</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('2')">2</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('3')">3</button>
+                    </br>
+                    <br>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('4')">4</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('5')">5</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('6')">6</button>
+                    </br>
+                    <br>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('7')">7</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('8')">8</button>
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('9')">9</button>
+
+                    
+                    </br>
+
+                        <button type="button" id="BotaoNumeros" onclick="escreverNumero('0')">0</button>
+                    <br>
+            
+
+                    <button type="button" id="BotaoOperacao" onclick="usarOperador('+')">+</button>
+                    <button type="button" id="BotaoOperacao" onclick="usarOperador('-')">-</button>
+                    <button type="button" id="BotaoOperacao" onclick="usarOperador('*')">*</button>
+                    <button type="button" id="BotaoOperacao" onclick="usarOperador('/')">/</button>
+                    <button type="button" id="BotaoOperacao" onclick="usarOperador('x²')">expo</button>
+                    <button type="button" id="BotaoOperacao" onclick="raizQuad()">√</button>
+                    <button id="BotaoOperacao" onclick="calcular(event)">=</button>
+                </br>
+        
+        </form>
+    </div>
+</div>
+</body>
+</html>
